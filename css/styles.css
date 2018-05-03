@@ -1,3 +1,18 @@
+/*
+    TABLE OF CONTENTS
+    1. GENERAL STYLES
+    2. MAIN CONTENT STYLES
+    3. MEDIA QUERIES
+*/
+
+
+
+
+/*
+GENERAL STYLES
+-------------------------------*/
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7,3 +22,84 @@ body {
     text-align: center;
 }
 
+#container-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+
+/*
+2. MAIN CONTENT STYLES
+-------------------------------*/
+
+.box {
+    width: 24%;
+    min-width: 200px;
+    height: 200px;
+}
+
+.blood-red {
+    background-color: #8a0707;
+    color: #078a8a;
+}
+
+.blood-red-s1 {
+    background-color: #600404;
+    color: #078a8a;
+}
+
+.blood-red-s2 {
+    background-color: #370202;
+    color: #078a8a;
+}
+
+.blood-red-s3 {
+    background-color: #0d0000;
+    color: #078a8a;
+}
+
+.container-section {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    color: white;
+    background-color: black;
+}
+
+#container-page h1 {
+    line-height: 50px;
+}
+
+
+
+
+/*
+3. MEDIA QUERIES
+-------------------------------*/
+
+
+
+
+@media(min-width: 1000px) {
+
+    .box {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 600px) {
+    
+    .box.blood-red-s1 {
+        display: none;
+    }
+
+    .box.blood-red-s2 {
+        display: none;
+    }
+
+}
